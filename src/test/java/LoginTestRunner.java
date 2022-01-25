@@ -39,8 +39,8 @@ public class LoginTestRunner extends Setup {
         Utils utils = new Utils(driver);
         utils.readJSONArray(2);
 
-        String username = login.doLoginByInvalidPassword(utils.getEmail(), utils.getPassword());
-        Assert.assertTrue(username.contains("Authentication failed"));
+        String errorMessage = login.doLoginByInvalidPassword(utils.getEmail(), utils.getPassword());
+        Assert.assertTrue(errorMessage.contains("Authentication failed"));
 
     }
 }
