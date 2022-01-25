@@ -7,5 +7,5 @@ gradlew
 gradlew.bat
 settings.gradle
 allure-report
-allure-results
+allure-result
 testNG.xml
