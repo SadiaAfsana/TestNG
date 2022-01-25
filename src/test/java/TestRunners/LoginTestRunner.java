@@ -1,3 +1,8 @@
+package TestRunners;
+
+import Pages.Login;
+import Setup.Setup;
+import Utils.Utils;
 import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.Test;

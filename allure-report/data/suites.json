@@ -1,0 +1,51 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "E-commerce portal automation",
+    "children" : [ {
+      "name" : "E-commerce portal Product Purchase",
+      "children" : [ {
+        "name" : "TestRunners.ProductPurchaseTestRunner",
+        "children" : [ {
+          "name" : "Select a Product",
+          "uid" : "879324c8e8b50da7",
+          "parentUid" : "2e2ea69f76562651de16207e2c579060",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643113528207,
+            "stop" : 1643113606068,
+            "duration" : 77861
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 2,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Add product in cart",
+          "uid" : "6af1da2c8d5a68c",
+          "parentUid" : "2e2ea69f76562651de16207e2c579060",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643113606220,
+            "stop" : 1643113624681,
+            "duration" : 18461
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 2,
+          "retriesStatusChange" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2e2ea69f76562651de16207e2c579060"
+      } ],
+      "uid" : "a75e6a2630cf2bfeaa36da7ca33e6e58"
+    } ],
+    "uid" : "61ecb9fc8236d0baf1d087ff409597e0"
+  } ],
+  "name" : "suites"
+}

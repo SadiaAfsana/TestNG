@@ -1,0 +1,123 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "DESKTOP-AEKCRH7",
+    "children" : [ {
+      "name" : "4880@DESKTOP-AEKCRH7.Test worker(1)",
+      "children" : [ {
+        "name" : "addToCart",
+        "uid" : "339f35162d3ba481",
+        "parentUid" : "68158f6d0c1bbe1264ae0eea08cb0813",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1643112994090,
+          "stop" : 1643112994090,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "selectMyProduct",
+        "uid" : "d275320b912e8611",
+        "parentUid" : "68158f6d0c1bbe1264ae0eea08cb0813",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643112997966,
+          "stop" : 1643113043031,
+          "duration" : 45065
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "68158f6d0c1bbe1264ae0eea08cb0813"
+    }, {
+      "name" : "3444@DESKTOP-AEKCRH7.Test worker(1)",
+      "children" : [ {
+        "name" : "Add product in cart",
+        "uid" : "6af1da2c8d5a68c",
+        "parentUid" : "baed7f5b9df9835f998bf7c84a5e1b80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643113606220,
+          "stop" : 1643113624681,
+          "duration" : 18461
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Select a Product",
+        "uid" : "879324c8e8b50da7",
+        "parentUid" : "baed7f5b9df9835f998bf7c84a5e1b80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643113528207,
+          "stop" : 1643113606068,
+          "duration" : 77861
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "baed7f5b9df9835f998bf7c84a5e1b80"
+    }, {
+      "name" : "6872@DESKTOP-AEKCRH7.Test worker(1)",
+      "children" : [ {
+        "name" : "selectMyProduct",
+        "uid" : "20555343f53da4d9",
+        "parentUid" : "f70f508b5c283a8a130ba6dabdfeab12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643113272960,
+          "stop" : 1643113320388,
+          "duration" : 47428
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addToCart",
+        "uid" : "5ceca178d1101ac8",
+        "parentUid" : "f70f508b5c283a8a130ba6dabdfeab12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643113320565,
+          "stop" : 1643113347601,
+          "duration" : 27036
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f70f508b5c283a8a130ba6dabdfeab12"
+    } ],
+    "uid" : "92db6b851eea4119a4d30e1714782549"
+  } ],
+  "name" : "timeline"
+}
