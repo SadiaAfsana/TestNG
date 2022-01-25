@@ -1,12 +1,7 @@
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 
 public class LoginTestRunner extends Setup {
@@ -15,21 +10,37 @@ public class LoginTestRunner extends Setup {
         Login login = new Login(driver);
         driver.get("http://automationpractice.com");
 
-        JSONParser jsonParser = new JSONParser();
-        Object obj = jsonParser.parse(new FileReader("./src/test/resources/user.json"));
-        JSONObject jsonObject = (JSONObject) obj;
+        Utils utils = new Utils(driver);
+        utils.readJSONArray(0);
 
-        String email = (String) jsonObject.get("email");
-        String password = (String) jsonObject.get("password");
-
-        String username = login.doLogin(email,password);
+        String username = login.doLogin(utils.getEmail(), utils.getPassword());
         Assert.assertTrue(username.contains("Test User"));
 
-        /*
+    }
+
+    @Test
+    public void UserLoginByInvalidEmail() throws IOException, ParseException {
         Login login = new Login(driver);
         driver.get("http://automationpractice.com");
-        String username = login.doLogin("tre@test.comju8", "123456");
-        Assert.assertTrue(username.contains("Test User"));
-         */
+
+        Utils utils = new Utils(driver);
+        utils.readJSONArray(1);
+
+        String errorMessage = login.doLoginByInvalidEmail(utils.getEmail(), utils.getPassword());
+        Assert.assertTrue(errorMessage.contains("Invalid email address"));
+
+    }
+
+    @Test
+    public void UserLoginByInvalidPassword() throws IOException, ParseException {
+        Login login = new Login(driver);
+        driver.get("http://automationpractice.com");
+
+        Utils utils = new Utils(driver);
+        utils.readJSONArray(2);
+
+        String username = login.doLoginByInvalidPassword(utils.getEmail(), utils.getPassword());
+        Assert.assertTrue(username.contains("Authentication failed"));
+
     }
 }
