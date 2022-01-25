@@ -6,3 +6,6 @@ build.gradle
 gradlew
 gradlew.bat
 settings.gradle
+allure-report
+allure-results
+testNG.xml
