@@ -63,10 +63,10 @@ public class Utils {
     }
 
     public void takeScreenShot() throws IOException {
-        File screenshotfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File screenshotfile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String time = new SimpleDateFormat("dd-MM-yyy-hh-mm-ss-aa").format(new Date());
         String fileWithPath = "./src/test/resources/screenshots/" + time + ".png";
         File DestFile = new File(fileWithPath);
-        FileUtils.copyFile(screenshotfile,DestFile);
+        FileUtils.copyFile(screenshotfile, DestFile);
     }
 }

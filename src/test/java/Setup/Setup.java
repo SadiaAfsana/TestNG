@@ -26,12 +26,12 @@ public class Setup {
     }
 
     @AfterMethod
-    public void screenShot(ITestResult result){
-        if (ITestResult.FAILURE == result.getStatus()){
+    public void screenShot(ITestResult result) {
+        if (ITestResult.FAILURE == result.getStatus()) {
             try {
                 Utils util = new Utils(driver);
                 util.takeScreenShot();
-            }catch (Exception exception){
+            } catch (Exception exception) {
                 System.out.println(exception.toString());
             }
         }
