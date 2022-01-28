@@ -19,6 +19,10 @@ public class Sales {
     List<WebElement> price;
     @FindBy(className = "onsale")
     List<WebElement> saleTag;
+    @FindBy(css = "img")
+    List<WebElement> product;
+    @FindBy(xpath = "//h1[contains(text(),'Single Shirt')]")
+    WebElement productTitle;
 
     public Sales (WebDriver webDriver){
         this.webDriver=webDriver;
@@ -36,5 +40,12 @@ public class Sales {
         int p1= price.size();
         int p2 = saleTag.size();
         Assert.assertEquals(p1,p2);
+    }
+
+    public void selectProduct(){
+        salesTab.get(1).click();
+        product.get(1).click();
+        String p = productTitle.getText();
+        Assert.assertEquals(p,"Single Shirt");
     }
 }

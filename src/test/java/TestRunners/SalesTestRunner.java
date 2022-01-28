@@ -12,10 +12,16 @@ public class SalesTestRunner extends Setup {
         Sales sales = new Sales(driver);
         sales.doClickSalesTab();
     }
-    @Test(priority = 1)
+    @Test(priority = 1,enabled = false)
     public void checkSalesTag(){
         driver.get("https://envothemes.com/envo-ecommerce");
         Sales sales = new Sales(driver);
         sales.verifySalesTag();
+    }
+    @Test(priority = 2)
+    public void viewProduct(){
+        driver.get("https://envothemes.com/envo-ecommerce");
+        Sales sales = new Sales(driver);
+        sales.selectProduct();
     }
 }
