@@ -24,28 +24,28 @@ public class Sales {
     @FindBy(xpath = "//h1[contains(text(),'Single Shirt')]")
     WebElement productTitle;
 
-    public Sales (WebDriver webDriver){
-        this.webDriver=webDriver;
+    public Sales(WebDriver webDriver) {
+        this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
     }
 
-    public void doClickSalesTab(){
+    public void doClickSalesTab() {
         salesTab.get(1).click();
         String title = salesTitle.getText();
-        Assert.assertEquals(title,"SALE");
+        Assert.assertEquals(title, "SALE");
     }
 
-    public void verifySalesTag(){
+    public void verifySalesTag() {
         salesTab.get(1).click();
-        int p1= price.size();
+        int p1 = price.size();
         int p2 = saleTag.size();
-        Assert.assertEquals(p1,p2);
+        Assert.assertEquals(p1, p2);
     }
 
-    public void selectProduct(){
+    public void selectProduct() {
         salesTab.get(1).click();
         product.get(1).click();
         String p = productTitle.getText();
-        Assert.assertEquals(p,"Single Shirt");
+        Assert.assertEquals(p, "Single Shirt");
     }
 }
