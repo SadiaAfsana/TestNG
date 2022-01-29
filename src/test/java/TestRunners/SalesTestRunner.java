@@ -1,7 +1,6 @@
 package TestRunners;
 
 import Pages.Sales;
-import Pages.Shop;
 import Setup.Setup;
 import org.testng.annotations.Test;
 
